@@ -19,6 +19,7 @@ import java.util.List;
 /** 教程页面
  * Created by tengj on 2017/3/13.
  */
+@CrossOrigin
 @Controller
 @RequestMapping("/learn")
 public class LearnController  extends AbstractController{
@@ -62,6 +63,7 @@ public class LearnController  extends AbstractController{
     @RequestMapping(value = "/update",method = RequestMethod.POST)
     @ResponseBody
     public AjaxObject updateLearn(@RequestBody LearnResource learn){
+    	System.out.println(learn.getAuthor());
         learnService.updateNotNull(learn);
         return AjaxObject.ok();
     }
@@ -73,6 +75,7 @@ public class LearnController  extends AbstractController{
     @RequestMapping(value="/delete",method = RequestMethod.POST)
     @ResponseBody
     public AjaxObject deleteLearn(@RequestBody Long[] ids){
+    	System.out.println(ids);
         learnService.deleteBatch(ids);
         return AjaxObject.ok();
     }
