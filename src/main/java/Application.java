@@ -14,7 +14,7 @@ import com.fire.util.MyMapper;
 //启注解事务管理
 @EnableTransactionManagement  // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
 @MapperScan(basePackages = "com.fire.dao", markerInterface = MyMapper.class)
-@EnableScheduling
+//@EnableScheduling
 public class Application {
      public static void main(String args[]){
     	 
