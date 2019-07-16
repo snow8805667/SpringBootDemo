@@ -9,4 +9,18 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="passwrod" jdbcType="VARCHAR" property="passwrod" />
   </resultMap>
+  
+  <select id="findByUsername" resultType="com.fire.domain.User">
+      SELECT * FROM newuser
+      where
+      username=#{username}
+    </select>
+    <select id="findUserById" resultType="com.fire.domain.User">
+        SELECT * FROM user
+      where
+      id=#{Id}
+    </select>
+  
+  
+  
 </mapper>

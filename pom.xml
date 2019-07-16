@@ -8,6 +8,7 @@
   <artifactId>spring-boot-1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+
   <name>spring-boot-1</name>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -105,6 +106,17 @@
 		   <groupId>org.springframework.boot</groupId>
 		   <artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
+		<dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+		<!--JWT 实现token认证-->
+		<dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.4.0</version>
+        </dependency>
 		
     </dependencies>
     <build>

@@ -25,7 +25,7 @@ public class VueLoginController {
      * @CrossOrigin(origins = "http://domain2.com", maxAge = 3600)
      */
 	@CrossOrigin
-	@RequestMapping(value="/login",method=RequestMethod.POST,produces="application/json; charset=UTF-8")
+	@RequestMapping(value="/login1",method=RequestMethod.POST,produces="application/json; charset=UTF-8")
 	@ResponseBody
 	public Result login(@Valid@RequestBody VueLoginInfo loginInfo,BindingResult bindingResult){
 		
